@@ -238,7 +238,7 @@ if (isEditMode) {
   return (
     <div className='py-8'>
       <form className='space-y-2 mx-auto' onSubmit={onSubmitHandler}>
-        <h1 className='text-5xl font-black md:text-6xl text-yellow-300'>{isEditMode ? "Edit Entry" : "What's on your mind ?"}</h1>
+        <h1 className='text-5xl font-black md:text-6xl text-yellow-300'>{isEditMode ? "Edit Entry" : `What's on your mind ?`}</h1>
         {isLoading && <BarLoader color='orange' width={"100%"}/>}
 
         <div className='py-6'>
@@ -306,7 +306,7 @@ if (isEditMode) {
           )}
         </div>
           <div>
-            <label className='text-white font-medium text-sm'>Add to Collections(optional)</label>
+            <label className='text-white font-medium text-sm'>Add to Collections-optional</label>
             <Controller
             name="collectionId"
             control={control}

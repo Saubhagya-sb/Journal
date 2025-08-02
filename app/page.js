@@ -44,7 +44,7 @@ export default async function Home(){
                     Every New Day is <br/> A New You 
                 </h1>
                 <p className='text-lg md:text-xl text-yellow-200 mb-8'>
-                    Capture your thoughts , track your moods, and reflect on your journey in a beautiful, secure space.
+                    Capture your thoughts ,track your moods ,and reflect on your journey in a beautiful ,secure space.
                 </p>
                 <div className='relative'>
                   <div className='absolute inset-0 bg-gradient-to-t from-orange-50 via-transparent to-transparent pointer-events-none z-10'/>
