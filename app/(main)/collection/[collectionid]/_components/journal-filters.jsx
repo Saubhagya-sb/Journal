@@ -78,13 +78,13 @@ export function JournalFilters({ entries }) {
         </div>
 
         <Select value={selectedMood} onValueChange={setSelectedMood}>
-          <SelectTrigger className="w-[150px]">
+          <SelectTrigger className="w-[150px] text-white">
             <SelectValue placeholder="Filter by mood" />
           </SelectTrigger>
           <SelectContent>
             {Object.values(MOODS).map((mood) => (
               <SelectItem key={mood.id} value={mood.id}>
-                <span className="flex items-center gap-2 text-white">
+                <span className="flex items-center gap-2">
                   {mood.emoji} {mood.label}
                 </span>
               </SelectItem>
@@ -117,7 +117,7 @@ export function JournalFilters({ entries }) {
 
         {(searchQuery || selectedMood || date) && (
           <Button
-            variant="journal"
+            variant="ghost"
             onClick={clearFilters}
             className="text-orange-600"
           >

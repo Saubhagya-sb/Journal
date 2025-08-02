@@ -4,20 +4,27 @@ import { JournalFilters } from "./_components/journal-filters";
 import DeleteCollectionDialog from "./_components/delete-collection";
 
 export default async function CollectionPage({ params }) {
-  const  {collectionId}  = params;
-  const entries = await getJournalEntries({ collectionId });
+  const { collectionid } = await params;
+//   const entries = await getJournalEntries({ collectionid });
   const collections =
-    collectionId !== "unorganized" ? await getCollection() : null;
-  const collection = collections?.find((c) => c.id === collectionId);
-  console.log(collectionId);
+    collectionid !== "unorganized" ? await getCollection() : null;
+  const collection = collections?.find((c) => c.id === collectionid);
+  console.log(collection);
+  const name = collection?.name
+  console.log(collectionid);
+  console.log(collection?.name);
   
   
+ 
+  
+  const entries = await getJournalEntries({ collectionName : name || "unorganized" });
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col justify-between">
         <div className="flex justify-between">
           <h1 className="text-4xl font-bold gradient-title text-white">
-            {collectionId === "unorganized"
+            {collectionid === "unorganized" || collectionid==="Unorganized%20Entries"
               ? "Unorganized Entries"
               : collection?.name || "Collection"}
           </h1>

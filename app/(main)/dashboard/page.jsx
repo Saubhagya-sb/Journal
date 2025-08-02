@@ -1,11 +1,11 @@
 import { getCollection } from "@/actions/collections";
-import { getJournalEntries } from "@/actions/journal.js";
+import {  getJournalEntriesPreview } from "@/actions/journal.js";
 import MoodAnalytics from "./_components/mood-analytics";
 import Collections from "./_components/collections";
 
 const Dashboard = async () => {
   const collections = await getCollection();
-  const entriesData = await getJournalEntries();
+  const entriesData = await getJournalEntriesPreview();
 
   // Group entries by collection
   const entriesByCollection = entriesData?.data?.entries?.reduce(

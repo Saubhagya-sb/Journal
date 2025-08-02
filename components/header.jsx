@@ -12,18 +12,12 @@ const Header = async() => {
     <header className='container mx-auto'>
         <nav className='py-6 px-4 flex justify-between items-center bg-orange-500'>
             <Link href={"/"}>
-                {/* <Image
-                    src={"/logo.png"}
-                    alt='MyJournal Logo'
-                    height={60}
-                    width={200}
-                    className='h-10 w-auto object-contain'
-                />   */}
+                
                 <span className='text-3xl text-white font-black'>MyJournal</span>
         </Link>
         <div className='flex gap-4'>
             <SignedIn>
-                 <Link href="/dashboard#collection">
+                 <Link href="/dashboard#collections">
                 <Button variant="outline" className="flex items-center gap-2">
                     <FolderOpen size={18}/>
                     <span className='hidden md:inline'>Collections</span>
