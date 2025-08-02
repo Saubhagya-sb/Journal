@@ -52,7 +52,7 @@ export default async function Home(){
                         <div className='border-b border-orange-100 pb-4 mb-4 flex justify-between items-center'>
                             <div className='flex items-center  gap-2'>
                             <Calendar className='h-5 w-5 text-orange-600'/>
-                            <span className='font-medium text-orange-900'>Today's Entry</span>
+                            <span className='font-medium text-orange-900'>Today&apos;s Entry</span>
                             </div>
                             <div className='flex gap-2'>
                                 <div className='h-3 w-3 rounded-full bg-orange-200'/>
