@@ -2,7 +2,7 @@ import { getCollection } from "@/actions/collections";
 import {  getJournalEntriesPreview } from "@/actions/journal.js";
 import MoodAnalytics from "./_components/mood-analytics";
 import Collections from "./_components/collections";
-
+export const dynamic = "force-dynamic"
 const Dashboard = async () => {
   const collections = await getCollection();
   const entriesData = await getJournalEntriesPreview();
