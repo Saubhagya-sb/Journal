@@ -6,18 +6,29 @@ import { Button } from './ui/button'
 import { FolderOpen, PenBox } from 'lucide-react'
 import UserMenu from './user-menu'
 import { checkUser } from '@/lib/checkUser'
+import { LayoutDashboard } from 'lucide-react'
 const Header = async() => {
     await checkUser()
     return (
     <header className='container mx-auto'>
         <nav className='py-6 px-4 flex justify-between items-center bg-orange-500'>
-            <Link href={"/"}>
+            
+                <Link href={"/"}>
                 
                 <span className='text-3xl text-white font-black'>MyJournal</span>
-        </Link>
+                </Link>
+                
+            
         <div className='flex gap-4'>
             <SignedIn>
+                <Link href={"/dashboard"}>
+                    <Button variant="outline" className="flex items-center gap-2">
+                        <LayoutDashboard size={18}/>
+                        <span className='hidden md:inline'>dashboard</span>
+                    </Button>
+                </Link>
                  <Link href="/dashboard#collections">
+                 
                 <Button variant="outline" className="flex items-center gap-2">
                     <FolderOpen size={18}/>
                     <span className='hidden md:inline'>Collections</span>
