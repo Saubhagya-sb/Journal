@@ -11,13 +11,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
-        journal:"bg-orange-600 hover:bg-orange-700 text-white shadow", 
-        journal2:"bg-orange-600 hover:bg-orange-700 text-white shadow animate-bounce", 
+          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 cursor-pointer",
+        journal:"bg-orange-600 hover:bg-orange-700 text-white shadow cursor-pointer", 
+        journal2:"bg-orange-600 hover:bg-orange-700 text-white shadow animate-bounce cursor-pointer", 
         destructive:
-          "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "bg-destructive cursor-pointer text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "border cursor-pointer bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
