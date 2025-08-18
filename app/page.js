@@ -99,7 +99,7 @@ export default async function Home(){
                     ))}    
                 </section>
                 <div className='space-y-24 mt-24'>
-                    <div className='grid md:grid-cols-2 gap-12'>
+                    <div className='grid md:grid-cols-1 sm:grid-cols-1 gap-12'>
                        <div className="p-4 space-y-3 flex flex-col items-start">
                             <div className='h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center'>
                                 <FileTextIcon className='h-6 w-6 text-orange-600' />

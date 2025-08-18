@@ -36,7 +36,7 @@ export default async function CollectionPage({ params }) {
           )}
         </div>
         {collection?.description && (
-          <h2 className="font-extralight pl-1">{collection?.description}</h2>
+          <h2 className="font-extralight pl-1 text-white">{collection?.description}</h2>
         )}
       </div>
 
